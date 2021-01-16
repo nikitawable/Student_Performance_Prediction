@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Student Perfomance Analysis</title>
+        <link rel="stylesheet" href="cssstyle.css">
+    </head>
+    <body>
+        <div class="content">
+        <h1><pre> Student Performance Prediction </pre></h1>
+        <form action='/predict'  method="post">
+        <input type="text" id="a1" name="Study Hours" placeholder="Study hours" required>
+        <input type="text" id="a1" name="Assignment Marks" placeholder="Assignment Averge marks" required>
+        <input type="text" id="a1" name="Motivated or Confident" id=" "placeholder="Is Motivated and Confident" required>
+        <div class="save">
+        <input type="button" value="Predict">
+    </div>
+
+    </form>
+    <br><h4 text-align="center"><b>{{ prediction_text }}</b></h4>
+
+</div>
+    </body>
+</html>
